@@ -1,0 +1,107 @@
+test_backup_without_main_file (__main__.SpecimenTests.test_backup_without_main_file)
+A lone backup causes an explicit recovery warning, not an empty restart. ... ok
+test_bad_text_fields (__main__.SpecimenTests.test_bad_text_fields)
+Blank, pipe-containing and control-character name/type fields are rejected. ... ok
+test_blank_line_in_file (__main__.SpecimenTests.test_blank_line_in_file)
+Unexpected blank saved rows trigger a clear error, not silent data loss. ... ok
+test_blocked_backup_preserves_main (__main__.SpecimenTests.test_blocked_backup_preserves_main)
+A backup replacement error leaves the original main data unchanged. ... ok
+test_cannot_skip_processing (__main__.SpecimenTests.test_cannot_skip_processing)
+Collected -> Completed is rejected by the stated teaching workflow. ... ok
+test_century_leap_rule (__main__.SpecimenTests.test_century_leap_rule)
+2100 is not a leap year; 2000 is a leap year. ... ok
+test_crlf_and_no_final_newline_data (__main__.SpecimenTests.test_crlf_and_no_final_newline_data)
+Both CRLF data and a last saved row without a newline load correctly. ... ok
+test_crlf_input (__main__.SpecimenTests.test_crlf_input)
+CRLF console input does not leave stray carriage returns/newlines. ... ok
+test_duplicate_id (__main__.SpecimenTests.test_duplicate_id)
+An existing ID is rejected before asking for more record fields. ... ok
+test_duplicate_ids_in_file (__main__.SpecimenTests.test_duplicate_ids_in_file)
+Duplicate IDs already present on disk are detected before editing. ... ok
+test_empty_data_file (__main__.SpecimenTests.test_empty_data_file)
+An existing empty data file is a valid empty project. ... ok
+test_empty_list (__main__.SpecimenTests.test_empty_list)
+An empty project displays a clear no-records message. ... ok
+test_empty_summary (__main__.SpecimenTests.test_empty_summary)
+The status summary reports zero for every stage when there are no records. ... ok
+test_eof_at_menu (__main__.SpecimenTests.test_eof_at_menu)
+End-of-input exits instead of repeating the menu forever. ... ok
+test_eof_mid_entry (__main__.SpecimenTests.test_eof_mid_entry)
+An incomplete registration is cancelled without creating a record. ... ok
+test_exact_menu_choice (__main__.SpecimenTests.test_exact_menu_choice)
+2junk, 02 and arbitrary text are not accepted as menu option 2. ... ok
+test_excess_capacity_file (__main__.SpecimenTests.test_excess_capacity_file)
+An oversized data file is refused instead of silently truncating records. ... ok
+test_extra_field_in_file (__main__.SpecimenTests.test_extra_field_in_file)
+An unexpected extra saved field is rejected. ... ok
+test_final_statuses_immutable (__main__.SpecimenTests.test_final_statuses_immutable)
+Completed and Rejected are final; no new-status prompt is displayed. ... ok
+test_forward_workflow (__main__.SpecimenTests.test_forward_workflow)
+Collected -> InProcess -> Completed updates one record and survives restart. ... ok
+test_full_capacity (__main__.SpecimenTests.test_full_capacity)
+At the record limit, a new add is refused without modifying saved records. ... ok
+test_id_characters (__main__.SpecimenTests.test_id_characters)
+IDs allow letters/digits/hyphen/underscore but reject spaces and slashes. ... ok
+test_impossible_date (__main__.SpecimenTests.test_impossible_date)
+April 31 is rejected. ... ok
+test_invalid_date_in_file (__main__.SpecimenTests.test_invalid_date_in_file)
+Invalid saved dates are not trusted. ... ok
+test_invalid_saved_status (__main__.SpecimenTests.test_invalid_saved_status)
+An unrecognised status already saved on disk blocks startup. ... ok
+test_invalid_status_choice (__main__.SpecimenTests.test_invalid_status_choice)
+An unsupported status menu choice does not change the record. ... ok
+test_last_input_without_newline (__main__.SpecimenTests.test_last_input_without_newline)
+A final exit choice without a newline is handled correctly. ... ok
+test_leap_day (__main__.SpecimenTests.test_leap_day)
+2028-02-29 is accepted as a valid leap day. ... ok
+test_long_line_drained (__main__.SpecimenTests.test_long_line_drained)
+A 400-character ID is rejected without leaking into the next menu input. ... ok
+test_long_or_binary_file_line (__main__.SpecimenTests.test_long_or_binary_file_line)
+Oversized and null-containing saved rows are refused. ... ok
+test_malformed_record_file (__main__.SpecimenTests.test_malformed_record_file)
+A malformed middle row blocks startup and preserves all original bytes. ... ok
+test_maximum_id_length (__main__.SpecimenTests.test_maximum_id_length)
+An ID exactly at the documented maximum length is accepted. ... ok
+test_maximum_sample_type_length (__main__.SpecimenTests.test_maximum_sample_type_length)
+A 39-character sample type is saved and searchable without truncation. ... ok
+test_missing_specimen_update (__main__.SpecimenTests.test_missing_specimen_update)
+An unknown specimen ID does not prompt for a status change. ... ok
+test_non_leap_day (__main__.SpecimenTests.test_non_leap_day)
+2027-02-29 is rejected and nothing is saved. ... ok
+test_outer_whitespace_trimmed (__main__.SpecimenTests.test_outer_whitespace_trimmed)
+Surrounding input whitespace is trimmed; spaces inside names remain. ... ok
+test_patient_code_validation (__main__.SpecimenTests.test_patient_code_validation)
+Patient codes use ID characters rather than spaces or real-name-style text. ... ok
+test_persistence_after_restart (__main__.SpecimenTests.test_persistence_after_restart)
+Saved records are still available after the program restarts. ... ok
+test_previous_data_backed_up (__main__.SpecimenTests.test_previous_data_backed_up)
+A successful save keeps the previous main file as a .bak file. ... ok
+test_reject_from_collected (__main__.SpecimenTests.test_reject_from_collected)
+A Collected specimen can be marked Rejected. ... ok
+test_reject_from_inprocess (__main__.SpecimenTests.test_reject_from_inprocess)
+An InProcess specimen can be marked Rejected. ... ok
+test_repeat_status_rejected (__main__.SpecimenTests.test_repeat_status_rejected)
+InProcess -> InProcess is rejected without a redundant save. ... ok
+test_save_failure_add (__main__.SpecimenTests.test_save_failure_add)
+A blocked temporary file prevents a false save and leaves memory empty. ... ok
+test_save_failure_update_rolls_back (__main__.SpecimenTests.test_save_failure_update_rolls_back)
+If an update cannot be saved, disk AND in-memory details remain unchanged. ... ok
+test_search_existing (__main__.SpecimenTests.test_search_existing)
+Searching an existing ID shows its full details. ... ok
+test_search_missing (__main__.SpecimenTests.test_search_missing)
+Searching an unknown ID gives a not-found message. ... ok
+test_short_date_and_year_range (__main__.SpecimenTests.test_short_date_and_year_range)
+Short dates and years below 2000 are rejected; 9999-12-31 is accepted. ... ok
+test_signed_date_component (__main__.SpecimenTests.test_signed_date_component)
+The reference bug 2026-01-+1 is rejected. ... ok
+test_summary_totals (__main__.SpecimenTests.test_summary_totals)
+A mixed-status file produces correct counts for all four stages. ... ok
+test_trailing_date_junk (__main__.SpecimenTests.test_trailing_date_junk)
+A date with trailing junk is rejected, not silently truncated. ... ok
+test_valid_add_no_spurious_menu_error (__main__.SpecimenTests.test_valid_add_no_spurious_menu_error)
+A normal valid registration saves exactly one record, with no false menu error. ... ok
+
+----------------------------------------------------------------------
+Ran 51 tests in 0.169s
+
+OK

@@ -1,0 +1,4 @@
+SP1001|PT042|Blood|2026-10-18|Collected
+SP1002|PT043|Urine|2026-10-18|InProcess
+SP1003|PT044|Serum|2026-10-18|Completed
+SP1004|PT045|Saliva|2026-10-18|Rejected

@@ -1,0 +1,22 @@
+name: Biomedical Laboratory Specimen Tracker checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  compile-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+      - name: Set up Python for the optional test runner
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compile this C program and run its integration tests
+        run: python tests/run_tests.py -v

@@ -1,0 +1,20 @@
+# Generated executable/object files
+*.exe
+*.o
+*.obj
+*.out
+a.out
+program_check
+specimen_tracker
+
+# Runtime data and backup/temp files -- do not commit these
+specimen_records.txt
+*.tmp
+*.bak
+
+# Test/editor/OS caches
+__pycache__/
+*.pyc
+.vscode/
+.DS_Store
+Thumbs.db

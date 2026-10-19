@@ -1,0 +1,18 @@
+Verification date: 2026-10-19
+Standalone repository: Biomedical-Laboratory-Specimen-Tracker
+Platform actually tested: Linux
+Compiler: gcc (Debian 14.2.0-19) 14.2.0
+
+Command from this repository root:
+gcc main.c -std=c11 -Wall -Wextra -Wpedantic -Werror -o specimen_tracker
+Result: PASS; no compiler diagnostics.
+
+This repository's integration tests: 51 passed / 51 run.
+Same 51 tests with UndefinedBehaviorSanitizer: PASS.
+Additional GCC -fanalyzer -c compilation: PASS; no diagnostics.
+Clean-start C demonstration: PASS; matches SAMPLE_OUTPUT.md.
+
+The C source is unchanged from the combined Drive ZIP.
+No other case-study folder is needed to compile, run or test this project.
+Windows execution and remote GitHub Actions were not tested here.
+See TEST_RESULTS.md and tests/LAST_TEST_RUN.txt for evidence and limits.
